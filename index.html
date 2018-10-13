@@ -1,1 +1,71 @@
-<h1> Hello World! </h1>
+<!DOCTYPE>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style type="text/css">
+    .container {
+      margin: 10;
+      width: 100%;
+    }
+
+    .quote {
+      margin-top: 25%;
+
+    }
+
+    .quoteLA {
+      text-align: center;
+      font: 36.0px 'Big Caslon';
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .author {
+      padding-right: 30%;
+      padding-left: 20%;
+      position: relative;
+      font: 18.0px 'Big Caslon';
+      text-align: right;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-12 col-md-6" style="background: black; height: 100%;">
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="row justify-content-center quote">
+        <div class="quoteLA" id='LA' onmouseover="trans(this)" onmouseout="transBack(this)">
+          <p>“Dubito ergo cogito,<br>
+            <span style="padding-left: 2em; ">cogito ergo sum.”</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="author"><i> - Descartes</i></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript ">
+  function trans(obj) {
+    $('#LA').fadeOut(400, function() {
+      $(this).html('<p>“I doubt therefore I think,<br><span style="padding-left: 2em;">I think therefore I am.”</span></p>').fadeIn(200);
+      $(this).attr("id", "EN");
+    });
+  }
+
+
+  function transBack(obj) {
+    $('#EN').fadeOut(400, function() {
+      $(this).html('<p>“Dubito ergo cogito,<br><span style = "padding-left: 2em;"> cogito ergo sum.” </span></p> ').fadeIn(200);
+      $(this).attr("id", "LA");
+    });
+  }
+</script>
+
+</html>
