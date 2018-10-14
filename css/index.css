@@ -1,0 +1,72 @@
+body {
+  background-image: url("../assets/pointilized_photo.png");
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 10;
+  width: 100%;
+}
+
+.quote {
+  margin-top: 25%;
+}
+
+.quoteLA {
+  text-align: center;
+  font: 36.0px 'Big Caslon';
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.author {
+  padding-right: 30%;
+  padding-left: 20%;
+  position: relative;
+  font: 18.0px 'Big Caslon';
+  text-align: right;
+}
+
+.bio {
+  margin-top: 5%;
+  text-align: center;
+  font: 24.0px 'Copperplate';
+}
+
+.afterBio {
+  content: "";
+  position: absolute;
+  /* bottom: 0; */
+  left: 49%;
+  right: 49%;
+  height: 0.25em;
+  border-top: 2px solid black;
+  z-index: -1;
+}
+
+.info {
+  margin-top: 1%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-align: center;
+  font: 16.0px 'Karma';
+}
+
+.contact {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+}
+
+.icon {
+  padding: 1%;
+  filter: grayscale(100%);
+  margin: auto;
+}
+
+.icon:hover {
+  filter: grayscale(0%);
+}
