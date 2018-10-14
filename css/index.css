@@ -1,6 +1,8 @@
 body {
   background-image: url("../assets/pointilized_photo.png");
   background-repeat: no-repeat;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
